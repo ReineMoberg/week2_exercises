@@ -34,14 +34,14 @@ public class App
 
 
         //Exercise 4
-        int[] original = new int[]{1,15,20};
+        /*int[] original = new int[]{1,15,20};
         int[] copy = Arrays.copyOf(original, original.length);          //create copy of array
         System.out.println("Original:" + Arrays.toString(original));    //print both arrays
-        System.out.println("Copy: " + Arrays.toString(copy));
+        System.out.println("Copy: " + Arrays.toString(copy));*/
 
 
         //Exercise 5
-        /*String[][] location = new String[2][2];
+        String[][] location = new String[2][2];
         Scanner userInput = new Scanner(System.in);
         for(int i=0; i< location.length; i++){          //put user input in 2-d array
             int j=0;
@@ -57,7 +57,7 @@ public class App
                 System.out.print(location[i][j] + " ");
             }
             System.out.println();                               //print on new line
-        }*/
+        }
 
 
         //Exercise 6
