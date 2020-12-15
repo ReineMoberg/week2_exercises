@@ -91,7 +91,7 @@ public class App
 
         //Exercise 8
         //(How do I delete element in array? How do I set int value to null?)
-        int[] numbers = new int[]{20,20,40,20,30,40,50,60,50};
+        /*int[] numbers = new int[]{20,20,40,20,30,40,50,60,50};
         int duplicateCounter = 0;
         System.out.println("This function can not handle 0 yet");
         System.out.println("Original numbers :" + Arrays.toString(numbers));
@@ -114,13 +114,13 @@ public class App
                 j++;
             }
         }
-        System.out.println("Without duplicates: " + Arrays.toString(noDuplicates));
+        System.out.println("Without duplicates: " + Arrays.toString(noDuplicates));*/
 
 
         //Exercise 9
-        /*int[] numbers = new int[]{3,58};
+        int[] numbers = new int[]{3,58};
         numbers = addANumber(numbers, 5);         //call method to add a 5
-        System.out.println(Arrays.toString(numbers));       //print new array*/
+        System.out.println(Arrays.toString(numbers));       //print new array
 
 
         //Exercise 10
@@ -158,11 +158,11 @@ public class App
 
 
     //Exercise 9
-    /*public static int[] addANumber(int[] originalArray, int addNumber){
+    public static int[] addANumber(int[] originalArray, int addNumber){
         int[] newArray = Arrays.copyOf(originalArray, originalArray.length + 1); //copy array
         newArray[newArray.length - 1] = addNumber;                               //and add a post
         return newArray;
-    }*/
+    }
 
 
 
