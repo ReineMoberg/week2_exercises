@@ -41,7 +41,7 @@ public class App
 
 
         //Exercise 5
-        String[][] location = new String[2][2];
+        /*String[][] location = new String[2][2];
         Scanner userInput = new Scanner(System.in);
         for(int i=0; i< location.length; i++){          //put user input in 2-d array
             int j=0;
@@ -57,18 +57,18 @@ public class App
                 System.out.print(location[i][j] + " ");
             }
             System.out.println();                               //print on new line
-        }
+        }*/
 
 
         //Exercise 6
-        /*int[] numbers = new int[]{43,5,23,17,2,14};
+        int[] numbers = new int[]{43,5,23,17,2,14};
         int sum =0;
         float averageResult = 0;
         for (int number : numbers) {
             sum += number;
         }
         averageResult = (float)sum / (float)numbers.length;
-        System.out.println("Average result is: " + averageResult);*/
+        System.out.println("Average result is: " + averageResult);
 
 
         //Exercise 7
