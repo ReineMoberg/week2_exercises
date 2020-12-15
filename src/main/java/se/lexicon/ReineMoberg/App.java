@@ -61,18 +61,18 @@ public class App
 
 
         //Exercise 6
-        int[] numbers = new int[]{43,5,23,17,2,14};
+        /*int[] numbers = new int[]{43,5,23,17,2,14};
         int sum =0;
         float averageResult = 0;
         for (int number : numbers) {
             sum += number;
         }
         averageResult = (float)sum / (float)numbers.length;
-        System.out.println("Average result is: " + averageResult);
+        System.out.println("Average result is: " + averageResult);*/
 
 
         //Exercise 7
-        /*int[] numbers = new int[10];                        //array to hold ten numbers
+        int[] numbers = new int[10];                        //array to hold ten numbers
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter ten numbers");            //read ten inputs from user
         for(int i=0; i<numbers.length; i++) {
@@ -86,7 +86,7 @@ public class App
                 System.out.print(number + " ");         //print as numbers
             }
         }
-        System.out.println();*/
+        System.out.println();
 
 
         //Exercise 8
