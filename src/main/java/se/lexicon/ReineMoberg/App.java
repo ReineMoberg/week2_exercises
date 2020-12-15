@@ -10,10 +10,10 @@ public class App
     {
 
         //Exercise 1
-        /*int numbers[] = new int[]{11,23,39,65};     //initialize array
+        int numbers[] = new int[]{11,23,39,65};     //initialize array
         for (int number : numbers) {                //print whole array
             System.out.println(number);
-        }*/
+        }
 
 
         //Exercise 2
