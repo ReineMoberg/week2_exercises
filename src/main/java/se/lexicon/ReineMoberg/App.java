@@ -72,7 +72,7 @@ public class App
 
 
         //Exercise 7
-        int[] numbers = new int[10];                        //array to hold ten numbers
+        /*int[] numbers = new int[10];                        //array to hold ten numbers
         Scanner userInput = new Scanner(System.in);
         System.out.println("Enter ten numbers");            //read ten inputs from user
         for(int i=0; i<numbers.length; i++) {
@@ -86,12 +86,12 @@ public class App
                 System.out.print(number + " ");         //print as numbers
             }
         }
-        System.out.println();
+        System.out.println();*/
 
 
         //Exercise 8
         //(How do I delete element in array? How do I set int value to null?)
-        /*int[] numbers = new int[]{20,20,40,20,30,40,50,60,50};
+        int[] numbers = new int[]{20,20,40,20,30,40,50,60,50};
         int duplicateCounter = 0;
         System.out.println("This function can not handle 0 yet");
         System.out.println("Original numbers :" + Arrays.toString(numbers));
@@ -114,7 +114,7 @@ public class App
                 j++;
             }
         }
-        System.out.println("Without duplicates: " + Arrays.toString(noDuplicates));*/
+        System.out.println("Without duplicates: " + Arrays.toString(noDuplicates));
 
 
         //Exercise 9
