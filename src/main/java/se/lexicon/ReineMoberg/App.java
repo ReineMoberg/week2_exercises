@@ -27,17 +27,17 @@ public class App
 
 
         //Exercise 3
-        String[] cities = new String[]{"Paris","London","New York","Stockholm"};
+        /*String[] cities = new String[]{"Paris","London","New York","Stockholm"};
         System.out.println("Unsorted: " + Arrays.toString(cities));     //print array of strings
         Arrays.sort(cities, String.CASE_INSENSITIVE_ORDER);             //sort array
-        System.out.println("Sorted: " + Arrays.toString(cities));       //print sorted array
+        System.out.println("Sorted: " + Arrays.toString(cities));       //print sorted array*/
 
 
         //Exercise 4
-        /*int[] original = new int[]{1,15,20};
+        int[] original = new int[]{1,15,20};
         int[] copy = Arrays.copyOf(original, original.length);          //create copy of array
         System.out.println("Original:" + Arrays.toString(original));    //print both arrays
-        System.out.println("Copy: " + Arrays.toString(copy));*/
+        System.out.println("Copy: " + Arrays.toString(copy));
 
 
         //Exercise 5
