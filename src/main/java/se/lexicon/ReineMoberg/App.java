@@ -118,20 +118,20 @@ public class App
 
 
         //Exercise 9
-        int[] numbers = new int[]{3,58};
+        /*int[] numbers = new int[]{3,58};
         numbers = addANumber(numbers, 5);         //call method to add a 5
-        System.out.println(Arrays.toString(numbers));       //print new array
+        System.out.println(Arrays.toString(numbers));       //print new array*/
 
 
         //Exercise 10
-        /*int[][] multiplicationTable = new int[][]{{1,2,3,4,5,6,7,8,9,10},{1,2,3,4,5,6,7,8,9,10}};
+        int[][] multiplicationTable = new int[][]{{1,2,3,4,5,6,7,8,9,10},{1,2,3,4,5,6,7,8,9,10}};
         for(int i=0; i< multiplicationTable[0].length; i++){            //length of a row
             for(int j=0; j< multiplicationTable[0].length; j++){        //multiply rows one at a time
                 int result = multiplicationTable[0][i] * multiplicationTable[1][j];
                 System.out.print(result + "\t");                        //print as matrix
             }
             System.out.println();
-        }*/
+        }
 
 
 
@@ -158,11 +158,11 @@ public class App
 
 
     //Exercise 9
-    public static int[] addANumber(int[] originalArray, int addNumber){
+    /*public static int[] addANumber(int[] originalArray, int addNumber){
         int[] newArray = Arrays.copyOf(originalArray, originalArray.length + 1); //copy array
         newArray[newArray.length - 1] = addNumber;                               //and add a post
         return newArray;
-    }
+    }*/
 
 
 
