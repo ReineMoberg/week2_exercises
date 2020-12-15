@@ -17,20 +17,20 @@ public class App
 
 
         //Exercise 2
-        int numbers[] =new int[]{1,6,9,8,7,5,3,2,5,0};  //array to be checked
+        /*int numbers[] =new int[]{1,6,9,8,7,5,3,2,5,0};  //array to be checked
         int searchNumber = 5;                           //number to search for
         int indexFound;                                 //found or not
         indexFound = indexOf(searchNumber, numbers);    //call method
         if (indexFound == -1) {                         //if not found
             System.out.println("Number could not be found");
-        }
+        }*/
 
 
         //Exercise 3
-        /*String[] cities = new String[]{"Paris","London","New York","Stockholm"};
+        String[] cities = new String[]{"Paris","London","New York","Stockholm"};
         System.out.println("Unsorted: " + Arrays.toString(cities));     //print array of strings
         Arrays.sort(cities, String.CASE_INSENSITIVE_ORDER);             //sort array
-        System.out.println("Sorted: " + Arrays.toString(cities));       //print sorted array*/
+        System.out.println("Sorted: " + Arrays.toString(cities));       //print sorted array
 
 
         //Exercise 4
@@ -140,7 +140,7 @@ public class App
 
 
     //Exercise 2
-    public static int indexOf(int number, int numbers[]) {
+    /*public static int indexOf(int number, int numbers[]) {
         int[] copy = Arrays.copyOf(numbers,numbers.length);     //array have to be sorted
         Arrays.sort(copy);                                      //for the binarySearch
         int indexNotFound = Arrays.binarySearch(copy, number);  //to work
@@ -154,7 +154,7 @@ public class App
             }
         }
         return 0;
-    }
+    }*/
 
 
     //Exercise 9
