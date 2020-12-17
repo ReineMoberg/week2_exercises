@@ -124,16 +124,32 @@ public class App
 
 
         //Exercise 10
-        int[][] multiplicationTable = new int[][]{{1,2,3,4,5,6,7,8,9,10},{1,2,3,4,5,6,7,8,9,10}};
+        /*int[][] multiplicationTable = new int[][]{{1,2,3,4,5,6,7,8,9,10},{1,2,3,4,5,6,7,8,9,10}};
         for(int i=0; i< multiplicationTable[0].length; i++){            //length of a row
             for(int j=0; j< multiplicationTable[0].length; j++){        //multiply rows one at a time
                 int result = multiplicationTable[0][i] * multiplicationTable[1][j];
                 System.out.print(result + "\t");                        //print as matrix
             }
             System.out.println();
+        }*/
+
+
+        //Exercise 11
+        Scanner userInput = new Scanner(System.in);
+        int[] userNumbers = new int[7];                                     //size of array
+        System.out.println("Enter " + userNumbers.length + " integers.");   //ask user for numbers
+        for (int i = 0; i < userNumbers.length; i++) {
+            System.out.println("Enter number " + (i + 1) + ":");
+            userNumbers[i] = userInput.nextInt();
         }
-
-
+        System.out.println("Your entered numbers: " + Arrays.toString(userNumbers));    //print array
+        int i, temp, halfArray = userNumbers.length / 2;                    //reverse order in array
+        for (i = 0; i < halfArray; i++) {
+            temp = userNumbers[i];
+            userNumbers[i] = userNumbers[(userNumbers.length - 1) - i];
+            userNumbers[(userNumbers.length - 1) - i] = temp;
+        }
+        System.out.println("Your numbers reversed: " + Arrays.toString(userNumbers));   //print array
 
     }
 
