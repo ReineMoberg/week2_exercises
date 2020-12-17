@@ -135,7 +135,7 @@ public class App
 
 
         //Exercise 11
-        Scanner userInput = new Scanner(System.in);
+        /*Scanner userInput = new Scanner(System.in);
         int[] userNumbers = new int[7];                                     //size of array
         System.out.println("Enter " + userNumbers.length + " integers.");   //ask user for numbers
         for (int i = 0; i < userNumbers.length; i++) {
@@ -149,7 +149,16 @@ public class App
             userNumbers[i] = userNumbers[(userNumbers.length - 1) - i];
             userNumbers[(userNumbers.length - 1) - i] = temp;
         }
-        System.out.println("Your numbers reversed: " + Arrays.toString(userNumbers));   //print array
+        System.out.println("Your numbers reversed: " + Arrays.toString(userNumbers));   //print array*/
+
+
+        //Exercise 12
+        int[][] numbers=new int[][]{{1,2,3},{2,4,6},{3,6,9}};
+            for(int i=0;i< numbers[0].length;i++){              //assumed square 2-d array
+                System.out.print(numbers[i][i] + "\t");         //print diagonal numbers
+            }
+        System.out.println();                                   //print new line
+        
 
     }
 
