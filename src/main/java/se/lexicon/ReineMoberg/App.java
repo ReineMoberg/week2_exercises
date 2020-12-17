@@ -153,12 +153,48 @@ public class App
 
 
         //Exercise 12
-        int[][] numbers=new int[][]{{1,2,3},{2,4,6},{3,6,9}};
-            for(int i=0;i< numbers[0].length;i++){              //assumed square 2-d array
-                System.out.print(numbers[i][i] + "\t");         //print diagonal numbers
+        /*int[][] numbers = new int[][]{{1, 2, 3}, {2, 4, 6}, {3, 6, 9}};
+        for (int i = 0; i < numbers[0].length; i++) {           //assumed square 2-d array
+            System.out.print(numbers[i][i] + "\t");             //print diagonal numbers
+        }
+        System.out.println();                                   //print new line*/
+
+
+        //Exercise 13
+        int[] randomNumbers = new int[10];
+        int[] oddEvenNumbers = new int[randomNumbers.length];
+        for (int i = 0; i < randomNumbers.length; i++) {        //assign random numbers
+            randomNumbers[i] = (int) (Math.random() * 100);
+        }
+        oddEvenNumbers = randomNumbers.clone();                 //clone whole array
+        int numberOfOdd = 0, i = 0, j = oddEvenNumbers.length - 1;      //sorting algorithm
+        while (i < j) {
+            while (oddEvenNumbers[i] % 2 != 0) {                //search even nr from left
+                i++;
             }
-        System.out.println();                                   //print new line
-        
+            while ((oddEvenNumbers[j] % 2 == 0) && (i < j)) {    //search odd nr from right
+                j--;
+            }
+            if (i < j) {                                 //Swap places if even nr
+                int temp = oddEvenNumbers[i];            //is on the left of odd nr
+                oddEvenNumbers[i] = oddEvenNumbers[j];
+                oddEvenNumbers[j] = temp;
+            }
+        }
+        for (int number : oddEvenNumbers) {               //count number of odd nr in array
+            if (number % 2 != 0) {
+                numberOfOdd++;
+            }
+        }
+        if ((numberOfOdd == 0) || (numberOfOdd == oddEvenNumbers.length)) {     //if all or none is
+            Arrays.sort(oddEvenNumbers);                                        //odd, sort all array
+        } else {                                                                //else sort part of array
+            Arrays.sort(oddEvenNumbers, 0, numberOfOdd);               //"from" is inclusive
+            Arrays.sort(oddEvenNumbers, numberOfOdd, oddEvenNumbers.length);    //"to" is excluding
+        }
+        System.out.println("Unsorted numbers: " + Arrays.toString(randomNumbers));
+        System.out.println("Sorted with odd numbers to the left: " + Arrays.toString(oddEvenNumbers));
+
 
     }
 
